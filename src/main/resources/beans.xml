@@ -9,9 +9,8 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <!--<bean id="person" class="com.machi.model.Person">-->
-        <!--<property name="age" value="22"/>-->
-        <!--<property name="name" value="张三"/>-->
-    <!--</bean>-->
-    <!--hahahahhahaaa-->
+    <bean id="person" class="com.machi.model.Person">
+        <property name="age" value="22"/>
+        <property name="name" value="张三"/>
+    </bean>
 </beans>

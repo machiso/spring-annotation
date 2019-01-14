@@ -2,6 +2,7 @@ package com.machi.config;
 
 import com.machi.model.Car;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.Scope;
  * 1、制定初始化和销毁方法
  */
 @Configuration
+@ComponentScan("com.machi")
 public class MainConfigOfLife {
 
     @Bean(initMethod = "init",destroyMethod = "destory")
@@ -18,4 +20,5 @@ public class MainConfigOfLife {
     public Car car(){
         return new Car();
     }
+
 }
